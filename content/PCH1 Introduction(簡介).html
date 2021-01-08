@@ -1,0 +1,334 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923106</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923106</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Hint.html'>Hint</a><ul class='dropdown'><li><a href='gitlab-ci.yml.html'>gitlab-ci.yml</a></li></ul><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li class='has-children'><a href='CMSiMDE 程式架構.html'>CMSiMDE 程式架構</a><ul class='dropdown'><li><a href='為何需要網際內容管理.html'>為何需要網際內容管理</a><li><a href='如何建立 CMSiMDE 子模組.html'>如何建立 CMSiMDE 子模組</a><li><a href='為何需要以子模組的設計.html'>為何需要以子模組的設計</a><li><a href='兩種不同的 git clone.html'>兩種不同的 git clone</a><li><a href='假如 CMSiMDE 不設為子模組.html'>假如 CMSiMDE 不設為子模組</a><li><a href='為何需要有動態網頁與靜態網頁.html'>為何需要有動態網頁與靜態網頁</a><li><a href='CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果.html'>CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果</a></li></li></ul></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='UNIT1  Succeeding in PC Hardware(成功的PC硬體).html'>UNIT1  Succeeding in PC Hardware(成功的PC硬體)</a><ul class='dropdown'><li><a href='Srategies for Learning (學習策略).html'>Srategies for Learning (學習策略)</a><li><a href='Planning appropriately(適當的計畫).html'>Planning appropriately(適當的計畫)</a><li><a href='Devloping Skills for Independent Learnin(發展自主學習的技能).html'>Devloping Skills for Independent Learnin(發展自主學習的技能)</a><li><a href='Metacognitive Skills(後設認知的技能).html'>Metacognitive Skills(後設認知的技能)</a></li></ul><li class='has-children'><a href='UNIT2 Hardware Basics(硬體的基礎).html'>UNIT2 Hardware Basics(硬體的基礎)</a><ul class='dropdown'><li><a href='PCH1 Basics(基礎).html'>PCH1 Basics(基礎)</a><li><a href='PCH1 Introduction(簡介).html'>PCH1 Introduction(簡介)</a><li><a href='PCH1 Hardware(硬體).html'>PCH1 Hardware(硬體)</a><li><a href='PCH1 Software(軟體).html'>PCH1 Software(軟體)</a><li><a href='PCH1 Firmware(韌體).html'>PCH1 Firmware(韌體)</a><li><a href='PCH1 Componentization Standardization(組件化 標準化).html'>PCH1 Componentization Standardization(組件化 標準化)</a></li></li></ul></ul><li><a href='hw2.html'>hw2</a><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='1.Character Input(字符輸入).html'>1.Character Input(字符輸入)</a><li><a href='2.Odd or Even(奇數或偶數).html'>2.Odd or Even(奇數或偶數)</a><li><a href='3.List Less Than Ten(列少於十).html'>3.List Less Than Ten(列少於十)</a><li><a href='4.Divisior(除數).html'>4.Divisior(除數)</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH1 Basics(基礎) << <a href='PCH1 Basics(基礎).html'>Previous</a> <a href='PCH1 Hardware(硬體).html'>Next</a> >> PCH1 Hardware(硬體)<br /><h1>PCH1 Introduction(簡介)</h1>
+<p><span>This lesson will cover the basics of PC Hardware. First, you will learn the various parts of both desktop and laptop computers. Next, you will discover basic terms that are associated with computers, such as hardware, software, and firmware. You will learn the most basic functions of a computer: input, output, storage, and processing. Next, you will explore various input and output interfaces on the computer and the associated cables. Finally, you will review connections between common peripherals and discuss the standard ports.</span></p>
+<p>本課將介紹PC硬件的基礎知識。首先，您將學習台式計算機和便攜式計算機的各個部分。接下來，您將發現與計算機關聯的基本術語，例如硬件，軟件和固件。您將學習計算機的最基本功能：輸入，輸出，存儲和處理。接下來，您將探索計算機上的各種輸入和輸出接口以及相關的電纜。最後，您將回顧通用外設之間的連接並討論標準端口。</p>
+<br/>PCH1 Functions of Computers: Input, Output, Storage, and Processing(<span>計算機功能：輸入，輸出，存儲和處理</span>)
+<p><span>What makes a computer a computer? Does a computer have to have certain pieces to be considered a computer? Consider the computers of the 1980s: they all included a display screen, a keyboard, and a processing unit. Over time, the computers have evolved into devices that do not look like a “typical” computer. Consider the iPhone or Android tablet, where the method of input relies on touch, without the use of a separate keyboard. How about the calculator watch displayed below; is it a computer?</span></p>
+<p id="N10690" lang=""><span>是什麼使計算機成為計算機？一台計算機是否必須具有某些部件才能視為計算機？考慮一下1980年代的計算機：它們都包括顯示屏，鍵盤和處理單元。隨著時間的流逝，計算機已經演變為看起來不像“典型”計算機的設備。考慮iPhone或Android平板電腦，其中輸入方法依靠觸摸，而不使用單獨的鍵盤。下面顯示的計算器手錶怎麼樣？是電腦嗎？</span></p>
+<p lang="" style="text-align: center;"><span class="image"><img alt="Photograph of calculator watch that has    numeric input keys and an LED display." class="popimg" id="_i_0" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image1.png" title="Photograph of calculator watch that has    numeric input keys and an LED display."/></span></p>
+<div class="imagewrap" style="text-align: center;"><span class="caption" lang="">Calculator watch. Photo used under CC-BY-NC license from<span> </span><a href="https://flic.kr/p/3yiM8k" id="_i_1" lang="" target="_blank">Tim Deering</a></span></div>
+<div class="paginationBt">
+<div class="pagtopwrapwrap2">
+<div class="pagtopwrap2">
+<div aria-label="頁" class="pagtop2" role="navigation" style="text-align: center;"><span></span></div>
+<div aria-label="頁" class="pagtop2" role="navigation" style="text-align: left;"><span>Regardless of the </span><a aria-describedby="N106A2" class="extra" id=""></a>form factor<span><span> </span>of the machine, four basic functions — input, output, storage, and processing — make a computer. Below is a display of how those functions work together.</span></div>
+<div aria-label="頁" class="pagtop2" role="navigation" style="text-align: left;"><span></span></div>
+<div aria-label="頁" class="pagtop2" role="navigation" style="text-align: left;"><span><span>不論機器的</span><a aria-describedby="N106A2" class="extra" id=""></a><span><span>外形尺寸</span></span><span><span>如何，<span> </span></span><span>計算機都具有四個基本功能（輸入，輸出，存儲和處理）。</span><span>下面顯示了這些功能如何協同工作。</span></span></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paginationBt">
+<div class="pagtopwrapwrap2">
+<div class="pagtopwrap2"></div>
+<div class="pagtopwrap2"><img alt="該圖顯示了計算機功能，從輸入開始，然後進入處理，然後進入輸出。 箭頭在處理和存儲之間雙向移動。" class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image2.png" title="該圖顯示了計算機功能，從輸入開始，然後進入處理，然後進入輸出。 箭頭在處理和存儲之間雙向移動。"/></div>
+<div class="pagtopwrap2"></div>
+<div class="pagtopwrap2" style="text-align: left;"><span>So, as we consider the history of computers and the future of computers, we must consider what is and what is not a computer. Obviously, our desktops and laptops are computers, since they perform the input, processing, output, and storage functions. But so also are our cellular phones and smartphones, since they perform all these functions. What about our televisions? Many of these are complex computers as well, since they take information from our input using the remote control, process the information, and return an output, such as an on-demand movie. Many of these televisions also store the information, such as your favorite channels or even the video content itself for later playback. Even some thermostats are computers, since they also perform these functions, such as the “smart thermostats,” like the NEST and other popular brands. Remember, the main determination of whether something is a computer or not relies on the functions it performs: does it perform input, processing, output, and storage? If so, then it is a computer.</span></div>
+<div class="pagtopwrap2"><span></span></div>
+<div class="pagtopwrap2"><span>因此，當我們考慮計算機的歷史和計算機的未來時，我們必須考慮什麼是計算機，什麼不是計算機。</span><span>顯然，我們的台式機和筆記本電腦是計算機，因為它們執行輸入，處理，輸出和存儲功能。</span><span>但是，由於我們的手機和智能手機執行所有這些功能，所以它們也是如此。</span><span>那我們的電視呢？</span><span>其中許多計算機也是複雜的計算機，因為它們使用遙控器從我們的輸入中獲取信息，處理信息並返回輸出，例如點播電影。</span><span>這些電視中的許多電視也會存儲信息，例如您喜歡的頻道，甚至是視頻內容本身，以供以後播放。</span><span>甚至有些自動調溫器都是計算機，因為它們也執行這些功能，例如“智能自動調溫器，</span><span>像NEST和其他熱門品牌一樣。</span><span>記住，對某物是否是計算機的主要確定取決於它執行的功能：它執行輸入，處理，輸出和存儲嗎？</span><span>如果是這樣，則它是一台計算機。</span></div>
+<div class="pagtopwrap2"><span></span></div>
+<div class="pagtopwrap2">
+<div actguid="d87f2cf40a0001dc03fd2a001363606e" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cf40a0001dc03fd2a001363606e&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd01">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader"><span>lear by doing(通過實踐學習)</span></span></div>
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader"><span></span></span></div>
+<div class="activityinfo"><span>True or False: A modern car is a computer.</span></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_lbd01">
+<div class="page 482862 482863" id="opch01_lbd01">
+<div class="question" id="482862">
+<div><span>是非題：現代汽車就是計算機。</span></div>
+<div class="i1">
+<div class="component"><br/><span class="radioContainer clearfix"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div actguid="d87f2cf40a0001dc03fd2a001363606e" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cf40a0001dc03fd2a001363606e&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd01">
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_lbd01">
+<div class="page 482862 482863" id="opch01_lbd01">
+<div class="question" id="482862">
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582972_i1_rad_0" name="582972_i1_group" type="radio" value="A"/><label for="582972_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582972_i1_rad_1" name="582972_i1_group" type="radio" value="B"/><label for="582972_i1_rad_1">False</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a><span>Reset this Activity</span></span></div>
+</div>
+<a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/x-oli-workbook_page/javascript();" rel="556798" title="Click for hint"></a></div>
+<div class="question" id="482863">
+<div>Which of the following is<span> </span><em lang="">not</em><span> </span>a function that makes a computer a computer?</div>
+<div><span>以下哪一項</span><em lang=""><span><span>不是</span></span></em><span><span>使計算機成為計算機的功能？</span></span></div>
+<div><span><span></span></span></div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582973_i1_rad_0" name="582973_i1_group" type="radio" value="A"/><label for="582973_i1_rad_0">A computer stores data.(<span>計算機存儲數據。</span>)</label></span><span class="radioContainer clearfix"><input id="582973_i1_rad_1" name="582973_i1_group" type="radio" value="B"/><label for="582973_i1_rad_1">A computer processes data.(<span>計算機處理數據。</span>)</label></span><span class="radioContainer clearfix"><input id="582973_i1_rad_2" name="582973_i1_group" type="radio" value="C"/><label for="582973_i1_rad_2">A computer manufactures data.(<span>計算機製造數據。</span>)</label></span><span class="radioContainer clearfix"><input id="582973_i1_rad_3" name="582973_i1_group" type="radio" value="D"/><label for="582973_i1_rad_3">A computer inputs and outputs data.(<span>計算機輸入和輸出數據。</span>)<a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a><span>Reset this Activity</span></label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2cf40a0001dc03fd2a001363606e"></div>
+</div>
+</div>
+</div>
+<div actguid="d87f2cf50a0001dc13881b8cfb46828c" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cf50a0001dc13881b8cfb46828c&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dpch01_digt09">
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader">did I get this(我了解了嗎)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_digt09">
+<div class="page 482550" id="opch01_digt09">
+<div class="question" id="482550">
+<div>True or False: Any device that performs input, processing, output, and storage is a computer.</div>
+<div class="i1">
+<div class="component"><span>是非題：執行輸入，處理，輸出和存儲的任何設備都是計算機。</span></div>
+<div class="component"><span class="radioContainer clearfix"><input id="582530_i1_rad_0" name="582530_i1_group" type="radio" value="A"/><label for="582530_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582530_i1_rad_1" name="582530_i1_group" type="radio" value="B"/><label for="582530_i1_rad_1">False</label></span></div>
+<div class="component"><span class="radioContainer clearfix"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a><span>Reset this Activity</span></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2cf50a0001dc13881b8cfb46828c"><span class="scnReader">checkpoint(檢查點)</span></div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N106F7">
+<p id="N106FC" lang="">Take a minute to stop and reflect on your progress for this learning objective.</p>
+<p lang=""><span>花一點時間停下來，為這個學習目標反思自己的進步。</span></p>
+<p lang="">Do you feel comfortable with this material and ready to move on?</p>
+<p lang=""><span>您對這種材料感到滿意並準備繼續前進嗎？</span></p>
+<div actguid="d87f2cf90a0001dc644fa41ac083bff4" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cf90a0001dc644fa41ac083bff4&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch01_checkpoint01">
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_checkpoint01">
+<div class="page 483079" id="opch01_checkpoint01">
+<div class="question" id="483079">
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="583231_i1_rad_0" name="583231_i1_group" type="radio" value="A"/><label for="583231_i1_rad_0">Yes, I feel confident in my ability to meet this learning objective.(<input id="583231_i1_rad_0" name="583231_i1_group" type="radio" value="A"/><label for="583231_i1_rad_0"><span><span>是的，我對實現這一學習目標的能力充滿信心。</span></span></label>)</label></span><span class="radioContainer clearfix"><input id="583231_i1_rad_1" name="583231_i1_group" type="radio" value="B"/><label for="583231_i1_rad_1">No, I'd like some more material on this learning objective.(<span>不，我想要有關此學習目標的更多材料。</span>)<a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a><span>Reset this Activity</span></label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paginationBt">
+<div class="pagtopwrapwrap2"></div>
+<br />PCH1 Basics(基礎) << <a href='PCH1 Basics(基礎).html'>Previous</a> <a href='PCH1 Hardware(硬體).html'>Next</a> >> PCH1 Hardware(硬體)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

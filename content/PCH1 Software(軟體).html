@@ -1,0 +1,233 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923106</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923106</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Hint.html'>Hint</a><ul class='dropdown'><li><a href='gitlab-ci.yml.html'>gitlab-ci.yml</a></li></ul><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li class='has-children'><a href='CMSiMDE 程式架構.html'>CMSiMDE 程式架構</a><ul class='dropdown'><li><a href='為何需要網際內容管理.html'>為何需要網際內容管理</a><li><a href='如何建立 CMSiMDE 子模組.html'>如何建立 CMSiMDE 子模組</a><li><a href='為何需要以子模組的設計.html'>為何需要以子模組的設計</a><li><a href='兩種不同的 git clone.html'>兩種不同的 git clone</a><li><a href='假如 CMSiMDE 不設為子模組.html'>假如 CMSiMDE 不設為子模組</a><li><a href='為何需要有動態網頁與靜態網頁.html'>為何需要有動態網頁與靜態網頁</a><li><a href='CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果.html'>CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果</a></li></li></ul></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='UNIT1  Succeeding in PC Hardware(成功的PC硬體).html'>UNIT1  Succeeding in PC Hardware(成功的PC硬體)</a><ul class='dropdown'><li><a href='Srategies for Learning (學習策略).html'>Srategies for Learning (學習策略)</a><li><a href='Planning appropriately(適當的計畫).html'>Planning appropriately(適當的計畫)</a><li><a href='Devloping Skills for Independent Learnin(發展自主學習的技能).html'>Devloping Skills for Independent Learnin(發展自主學習的技能)</a><li><a href='Metacognitive Skills(後設認知的技能).html'>Metacognitive Skills(後設認知的技能)</a></li></ul><li class='has-children'><a href='UNIT2 Hardware Basics(硬體的基礎).html'>UNIT2 Hardware Basics(硬體的基礎)</a><ul class='dropdown'><li><a href='PCH1 Basics(基礎).html'>PCH1 Basics(基礎)</a><li><a href='PCH1 Introduction(簡介).html'>PCH1 Introduction(簡介)</a><li><a href='PCH1 Hardware(硬體).html'>PCH1 Hardware(硬體)</a><li><a href='PCH1 Software(軟體).html'>PCH1 Software(軟體)</a><li><a href='PCH1 Firmware(韌體).html'>PCH1 Firmware(韌體)</a><li><a href='PCH1 Componentization Standardization(組件化 標準化).html'>PCH1 Componentization Standardization(組件化 標準化)</a></li></li></ul></ul><li><a href='hw2.html'>hw2</a><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='1.Character Input(字符輸入).html'>1.Character Input(字符輸入)</a><li><a href='2.Odd or Even(奇數或偶數).html'>2.Odd or Even(奇數或偶數)</a><li><a href='3.List Less Than Ten(列少於十).html'>3.List Less Than Ten(列少於十)</a><li><a href='4.Divisior(除數).html'>4.Divisior(除數)</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH1 Hardware(硬體) << <a href='PCH1 Hardware(硬體).html'>Previous</a> <a href='PCH1 Firmware(韌體).html'>Next</a> >> PCH1 Firmware(韌體)<br /><h1>PCH1 Software(軟體)</h1>
+<p>Learning objective(學習目標)</p>
+<div role="contentinfo">
+<div class="opacity">
+<div class="content shadowTwo" role="main">
+<div class="" id="lobjh">
+<ul>
+<li>
+<div class="" id="identify_hardware_software_firmware" lang="">Identify a computer’s hardware, software, and firmware.</div>
+</li>
+<li><span>標識計算機的硬件，軟件和固件。</span></li>
+</ul>
+</div>
+<div class="contentContain">
+<p id="N10680" lang="">Software is completely intangible and cannot be physically touched. Software, in its purest form, is a series of 1s and 0s (bits) that make up the code that gives the computer its instructions on how to perform a certain task. While you may be able to touch the media on which the software is stored (like a CD or DVD), you cannot really touch the software code itself.</p>
+<p lang=""><span>軟件是完全無形的，不能被實際觸摸。</span><span>最純粹形式的軟件是由一系列1和0（位）組成的代碼，這些代碼向計算機提供有關如何執行特定任務的指令。</span><span>儘管您可以觸摸存儲軟件的介質（例如CD或DVD），但實際上不能觸摸軟件代碼本身。</span></p>
+<p id="N10683" lang="" style="text-align: left;">The most basic software that a computer requires is the operating system. There are numerous operating systems on the market today, including various versions of Microsoft Windows, Macintosh OS X, Linux, Android, and iOS, to name just a few. The operating system provides the standard methods for saving, retrieving, changing, printing, and transmitting information in the computer. Operating systems contain internal commands, which are programs that are built into the operating system to perform basic tasks such as file management (delete, copy, and rename files). Additionally, operating systems also contain external commands, which are added programs to complete more complicated functions, such as defragmentation of a hard drive or handling the remote control of another computer on the network.</p>
+<p lang="" style="text-align: left;"><span>計算機所需的最基本的軟件是操作系統。</span><span>當今市場上有許多操作系統，包括Microsoft Windows，Macintosh OS X，Linux，Android和iOS的各種版本，僅舉幾例。</span><span>操作系統提供了用於在計算機中保存，檢索，更改，打印和傳輸信息的標準方法。</span><span>操作系統包含內部命令，這些內部命令是操作系統中內置的用於執行基本任務（例如文件管理（刪除，複製和重命名文件））的程序。</span><span>此外，操作系統還包含外部命令，這些命令是添加的程序，可以完成更複雜的功能，例如對硬盤驅動器進行碎片整理或處理網絡上另一台計算機的遠程控制。</span></p>
+<p id="N10686" lang="">Finally, there are software programs called applications. These programs are used to create, store, modify, and view information that you create. Applications, such as Microsoft Office or Adobe Acrobat, allow you to read and create documents and presentations. Other applications, such as games and web browsers, may instead be used for entertainment.</p>
+<p id="N10686" lang=""><span>最後，有稱為應用程序的軟件程序。這些程序用於創建，存儲，修改和查看您創建的信息。諸如Microsoft Office或Adobe Acrobat之類的應用程序允許您閱讀和創建文檔和演示文稿。可以將其他應用程序（例如游戲和Web瀏覽器）用於娛樂。</span></p>
+<div actguid="d87f2d010a0001dc0fcb10da8f216b52" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d010a0001dc0fcb10da8f216b52&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd05">
+<div class="activityhead"></div>
+</div>
+</div>
+<div actguid="d87f2d010a0001dc0fcb10da8f216b52" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d010a0001dc0fcb10da8f216b52&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd05">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing (通過實踐學習)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_lbd05">
+<div class="page 482978" id="opch01_lbd05">
+<div class="question" id="482978">
+<div>Which of the following is<span> </span><em lang="">not</em><span> </span>true of software?</div>
+<div>以下哪項對軟件不適用?</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="583100_i1_rad_0" name="583100_i1_group" type="radio" value="A"/><label for="583100_i1_rad_0">Software provides instructions to tell the computer’s hardware what to do.(<label for="583100_i1_rad_0"><span><span>軟件提供了指示，以告知計算機硬件該怎麼做。</span></span></label>)</label></span><span class="radioContainer clearfix"><input id="583100_i1_rad_1" name="583100_i1_group" type="radio" value="B"/><label for="583100_i1_rad_1">An operating system is a form of software.(<span>操作系統是一種軟件形式。</span>)</label></span><span class="radioContainer clearfix"><input id="583100_i1_rad_2" name="583100_i1_group" type="radio" value="C"/><label for="583100_i1_rad_2">Software can be touched and physically handled.(<span>可以觸摸和物理處理軟件。</span>)</label></span><span class="radioContainer clearfix"><input id="583100_i1_rad_3" name="583100_i1_group" type="radio" value="D"/><label for="583100_i1_rad_3">Applications are a form of software.(<span>應用程序是一種軟件形式。</span>)</label></span></div>
+</div>
+<a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/x-oli-workbook_page/javascript();" rel="556926" title="Click for hint"></a></div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2d010a0001dc0fcb10da8f216b52"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2d010a0001dc0fcb10da8f216b52" id="reset-d87f2d010a0001dc0fcb10da8f216b52"></a>Reset this Activity</div>
+<div class="pageControls clearfix"></div>
+<br />PCH1 Hardware(硬體) << <a href='PCH1 Hardware(硬體).html'>Previous</a> <a href='PCH1 Firmware(韌體).html'>Next</a> >> PCH1 Firmware(韌體)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

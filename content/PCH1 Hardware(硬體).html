@@ -1,0 +1,571 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923106</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923106</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Hint.html'>Hint</a><ul class='dropdown'><li><a href='gitlab-ci.yml.html'>gitlab-ci.yml</a></li></ul><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li class='has-children'><a href='CMSiMDE 程式架構.html'>CMSiMDE 程式架構</a><ul class='dropdown'><li><a href='為何需要網際內容管理.html'>為何需要網際內容管理</a><li><a href='如何建立 CMSiMDE 子模組.html'>如何建立 CMSiMDE 子模組</a><li><a href='為何需要以子模組的設計.html'>為何需要以子模組的設計</a><li><a href='兩種不同的 git clone.html'>兩種不同的 git clone</a><li><a href='假如 CMSiMDE 不設為子模組.html'>假如 CMSiMDE 不設為子模組</a><li><a href='為何需要有動態網頁與靜態網頁.html'>為何需要有動態網頁與靜態網頁</a><li><a href='CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果.html'>CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果</a></li></li></ul></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='UNIT1  Succeeding in PC Hardware(成功的PC硬體).html'>UNIT1  Succeeding in PC Hardware(成功的PC硬體)</a><ul class='dropdown'><li><a href='Srategies for Learning (學習策略).html'>Srategies for Learning (學習策略)</a><li><a href='Planning appropriately(適當的計畫).html'>Planning appropriately(適當的計畫)</a><li><a href='Devloping Skills for Independent Learnin(發展自主學習的技能).html'>Devloping Skills for Independent Learnin(發展自主學習的技能)</a><li><a href='Metacognitive Skills(後設認知的技能).html'>Metacognitive Skills(後設認知的技能)</a></li></ul><li class='has-children'><a href='UNIT2 Hardware Basics(硬體的基礎).html'>UNIT2 Hardware Basics(硬體的基礎)</a><ul class='dropdown'><li><a href='PCH1 Basics(基礎).html'>PCH1 Basics(基礎)</a><li><a href='PCH1 Introduction(簡介).html'>PCH1 Introduction(簡介)</a><li><a href='PCH1 Hardware(硬體).html'>PCH1 Hardware(硬體)</a><li><a href='PCH1 Software(軟體).html'>PCH1 Software(軟體)</a><li><a href='PCH1 Firmware(韌體).html'>PCH1 Firmware(韌體)</a><li><a href='PCH1 Componentization Standardization(組件化 標準化).html'>PCH1 Componentization Standardization(組件化 標準化)</a></li></li></ul></ul><li><a href='hw2.html'>hw2</a><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='1.Character Input(字符輸入).html'>1.Character Input(字符輸入)</a><li><a href='2.Odd or Even(奇數或偶數).html'>2.Odd or Even(奇數或偶數)</a><li><a href='3.List Less Than Ten(列少於十).html'>3.List Less Than Ten(列少於十)</a><li><a href='4.Divisior(除數).html'>4.Divisior(除數)</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH1 Introduction(簡介) << <a href='PCH1 Introduction(簡介).html'>Previous</a> <a href='PCH1 Software(軟體).html'>Next</a> >> PCH1 Software(軟體)<br /><h1>PCH1 Hardware(硬體)</h1>
+<div class="" id="lobjh">Learning Objectives</div>
+<div class="opacity">
+<div class="content shadowTwo" role="main">
+<div class="multi" id="lobjh">
+<ul>
+<li>
+<div class="" id="identify_hardware_software_firmware" lang="">Identify a computer’s hardware, software, and firmware.</div>
+<div class="" id="identify_inputs_outputs_and_compare_connection_interfaces" lang="">Identify and categorize inputs and outputs. Compare and contrast various connection interfaces and cables and explain their purposes.</div>
+</li>
+<li>
+<div class="" id="identify_hardware_software_firmware" lang=""><span>標識計算機的硬件，軟件和固件。</span></div>
+<div class="" id="identify_inputs_outputs_and_compare_connection_interfaces" lang=""><span><span>對輸入和輸出進行識別和分類。</span><span>比較和對比各種連接接口和電纜，並說明其用途。</span></span></div>
+</li>
+</ul>
+<div class="" id="identify_hardware_software_firmware" lang=""><span></span></div>
+<div class="" lang="">
+<div class="" id="identify_hardware_software_firmware" lang=""><span></span></div>
+</div>
+</div>
+<div class="contentContain">
+<p id="N106A3" lang="">A computer system includes hardware, software, and firmware. To build a computer, we must first gather the required hardware. The hardware is the part of the computer that you can touch and feel. When most people see a typical computer, they understand that there are physical components to what they are using, such as the the hard metallic or plastic System unit, central processing unit (CPU), power supply, disk drives, and other essential components. Hardware is limited by its manufacture date and specifically by the motherboard installed. Depending on age and availability, some of the hardware items may be expensive to acquire, repair, or replace. For example, if the computer is running slower over time as you add newer software, it may be necessary to increase the amount of physical memory, called<span> </span><span class="term" lang="">RAM<span> </span></span>(random access memory), in the computer. In order to do this, the technician would need to purchase the correct size, speed, and style of memory according to the motherboard specifications and install it in the computer which will then enhance its ability to process information more quickly.</p>
+<p lang=""><span>計算機系統包括硬件，軟件和固件。要構建計算機，我們必須首先收集所需的硬件。硬件是您可以觸摸和感覺到的計算機的一部分。當大多數人看到一台典型的計算機時，他們就會知道所使用的是物理組件，例如，硬金屬或塑料系統單元，中央處理器（CPU），電源，磁盤驅動器和其他必要組件。硬件受製造日期限制，特別是受安裝的主板限制。根據使用年限和可用性，某些硬件項目的購置，維修或更換可能會很昂貴。例如，如果計算機隨著時間的推移運行速度變慢，而您添加了更新的軟件，則可能有必要增加物理內存量，稱為</span><span class="term" lang=""><span><span>計算機中的RAM</span></span></span><span><span>（隨機存取存儲器）。</span><span>為此，技術人員需要根據主板規格購買正確的大小，速度和內存類型，然後將其安裝在計算機中，這將增強其更快地處理信息的能力。</span></span></p>
+<p id="N106A9" lang="">Computer hardware consists of the mechanical and electrical parts of the computer. Data flows through the motherboard in what is known as the system bus. External ports, which are discussed in more detail further in this lesson, allow peripheral devices to be connected to the system unit. Common ports are USB, serial, and parallel ports.</p>
+<p lang=""><span>計算機硬件由計算機的機械和電氣部分組成。</span><span>數據以所謂的系統總線流經母板。</span><span>在本課中將進一步詳細討論的外部端口允許將外圍設備連接到系統單元。</span><span>通用端口是USB，串行和並行端口。</span></p>
+<p id="N106AC" lang="">Peripheral devices consist of hardware attached to the system unit and are designated as input, output, or both. Traditional input device examples are the mouse and keyboard which are used to input data.</p>
+<p lang=""><span>外圍設備由連接到系統單元的硬件組成，並被指定為輸入，輸出或兩者。</span><span>傳統的輸入設備示例是用於輸入數據的鼠標和鍵盤。</span></p>
+<div class="imagewrap" style="text-align: center;"><span class="image"><img alt="Photograph of wireless keyboard and    wireless mouse." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image3.png" title="Photograph of wireless keyboard and    wireless mouse."/></span></div>
+<div class="imagewrap" style="text-align: center;"><span class="image"><span>Input devices: keyboard and mouse. Photo used under CC-BY-NC-ND license from </span><a href="https://flic.kr/p/4d21Tt" id="_i_1" lang="" target="_blank">Ben Ward</a><span>.</span></span></div>
+<p id="N106BD" lang="">Output devices consist of common items such as monitors, speakers, and printers. All of these devices are ways that the computer can give feedback to the user through either visual or auditory output.</p>
+<p lang=""><span>輸出設備由通用項目組成，例如監視器，揚聲器和打印機。</span><span>所有這些設備都是計算機可以通過視覺或聽覺輸出向用戶提供反饋的方式。</span></p>
+<p id="N106C0" lang="">Traditionally singular devices have evolved to become both input and output. Gaming Joysticks which provide feedback to the user through vibrations and of course the touch-screen display now serve as both.</p>
+<p lang=""><span>傳統上，單個設備已演變為輸入和輸出。</span><span>通過振動向用戶提供反饋的遊戲操縱桿，當然觸摸屏顯示器現在兼用作兩者。</span></p>
+<div class="imagewrap" style="text-align: center;"><span class="image"><img alt="Photograph of audio speakers, video    monitors, and smart phone display." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image4.png" title="Photograph of audio speakers, video    monitors, and smart phone display."/></span></div>
+<div class="imagewrap" style="text-align: left;">
+<div class="imagewrap" style="text-align: center;"><span class="caption" lang="">Output devices: monitor and speaker. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/9w84j8" id="_i_3" lang="" target="_blank">William</a><a href="https://flic.kr/p/9w84j8" id="_i_4" lang="" target="_blank">Hook</a>.</span></div>
+<div actguid="d87f2cfb0a0001dc7a54c001a9301816" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cfb0a0001dc7a54c001a9301816&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd03">
+<div class="activityhead"></div>
+</div>
+</div>
+</div>
+<div actguid="d87f2cfb0a0001dc7a54c001a9301816" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cfb0a0001dc7a54c001a9301816&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd03">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing(通過實踐學習)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_lbd03">
+<div class="page 84908 482814 482815 482816 482817 482818 482819 482820 482821" id="opch01_lbd03">
+<div>
+<p id="N10065" lang="">For each of the following, identify whether the item shown is an input device, an output device, or both an input and an output device.</p>
+<p lang=""><span>對於以下各項，請確定顯示的項目是輸入設備，輸出設備，還是輸入和輸出設備。</span></p>
+</div>
+<div class="question ddfb" id="482814">
+<div><img alt="Mouse photo used under CC-BY license from Creative Tools (https://www.flickr.com/photos/creative_tools/). " id="N1006A" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image5.jpeg" title="Mouse photo used under CC-BY license from Creative Tools (https://www.flickr.com/photos/creative_tools/). "/><span class="A"> <span class="component"><select id="A">
+<option id="A_EMPTY_CHOICE" value="">--</option>
+<option id="A_opt_0" value="input">Input device</option>
+<option id="A_opt_1" value="output">Output device</option>
+<option id="A_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+<div class="question ddfb" id="482815">
+<div><img alt="Microphone photo used under CC-BY license from Chad Kainz (https://www.flickr.com/photos/smaedli/)." id="N1007D" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image6.jpeg" title="Microphone photo used under CC-BY license from Chad Kainz (https://www.flickr.com/photos/smaedli/)."/><span class="B"> <span class="component"><select id="B">
+<option id="B_EMPTY_CHOICE" value="">--</option>
+<option id="B_opt_0" value="input">Input device</option>
+<option id="B_opt_1" value="output">Output device</option>
+<option id="B_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+<div class="question ddfb" id="482816">
+<div><img alt="Touch screen photo used under CC-BY-NC license from Pieter Ouwerkerk (https://www.flickr.com/photos/pieterouwerkerk/)." id="N10090" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image7.jpeg" title="Touch screen photo used under CC-BY-NC license from Pieter Ouwerkerk (https://www.flickr.com/photos/pieterouwerkerk/)."/><span class="C"> <span class="component"><select id="C">
+<option id="C_EMPTY_CHOICE" value="">--</option>
+<option id="C_opt_0" value="input">Input device</option>
+<option id="C_opt_1" value="output">Output device</option>
+<option id="C_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+<div class="question ddfb" id="482817">
+<div><img alt="Speaker photo used under CC-BY license from frankieleon (https://www.flickr.com/photos/armydre2008/)." id="N100A3" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image8.jpeg" title="Speaker photo used under CC-BY license from frankieleon (https://www.flickr.com/photos/armydre2008/)."/><span class="D"> <span class="component"><select id="D">
+<option id="D_EMPTY_CHOICE" value="">--</option>
+<option id="D_opt_0" value="input">Input device</option>
+<option id="D_opt_1" value="output">Output device</option>
+<option id="D_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+<div class="question ddfb" id="482818">
+<div><img alt="Controller photo used under CC-BY-NC-ND license from MacDX1 (https://www.flickr.com/photos/macd x1/)." id="N100B6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image9.jpeg" title="Controller photo used under CC-BY-NC-ND license from MacDX1 (https://www.flickr.com/photos/macd x1/)."/><span class="E"> <span class="component"><select id="E">
+<option id="E_EMPTY_CHOICE" value="">--</option>
+<option id="E_opt_0" value="input">Input device</option>
+<option id="E_opt_1" value="output">Output device</option>
+<option id="E_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+<div class="question ddfb" id="482819">
+<div><img alt="Monitor image used under CC-BY license from Donato Accogli (https://www.flickr.com/photos/abusx/)." id="N100C9" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image10.jpeg" title="Monitor image used under CC-BY license from Donato Accogli (https://www.flickr.com/photos/abusx/)."/><span class="F"> <span class="component"><select id="F">
+<option id="F_EMPTY_CHOICE" value="">--</option>
+<option id="F_opt_0" value="input">Input device</option>
+<option id="F_opt_1" value="output">Output device</option>
+<option id="F_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+<div class="question ddfb" id="482820">
+<div><img alt="Headphones  photo used under CC-BY-NC-ND license from Philips Communications (https://www.flickr.com/photos/philips_newscenter/)." id="N100DC" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image11.jpeg" title="Headphones  photo used under CC-BY-NC-ND license from Philips Communications (https://www.flickr.com/photos/philips_newscenter/)."/><span class="G"> <span class="component"><select id="G">
+<option id="G_EMPTY_CHOICE" value="">--</option>
+<option id="G_opt_0" value="input">Input device</option>
+<option id="G_opt_1" value="output">Output device</option>
+<option id="G_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+<div class="question ddfb" id="482821">
+<div><img alt="Keyboard photo used under CC-BY-NC-ND license from dtsomp (https://www.flickr.com/photos/dtsomp/)." id="N100EF" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image12.jpeg" title="Keyboard photo used under CC-BY-NC-ND license from dtsomp (https://www.flickr.com/photos/dtsomp/)."/><span class="H"> <span class="component"><select id="H">
+<option id="H_EMPTY_CHOICE" value="">--</option>
+<option id="H_opt_0" value="input">Input device</option>
+<option id="H_opt_1" value="output">Output device</option>
+<option id="H_opt_2" value="both">Input and output device</option>
+</select></span></span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2cfb0a0001dc7a54c001a9301816"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a><span>Reset this Activity</span></div>
+</div>
+</div>
+</div>
+<p id="N106F4" lang="">The central processing unit (CPU) is the hardware that is the “brains” of the computer and the central point where processing occurs.</p>
+<p lang=""><span>中央處理器（CPU）是硬件，是計算機的“大腦”，是進行處理的中心點。</span></p>
+<div class="imagewrap" style="text-align: center;"><span class="image"><img alt="Photograph of a central processing unit    being held between a thumb and finger." class="popimg" id="_i_5" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image13.png" title="Photograph of a central processing unit    being held between a thumb and finger."/></span></div>
+<div class="imagewrap" style="text-align: left;">
+<div class="imagewrap" style="text-align: center;"><span class="caption" lang="">Central processing unit. Photo used under CC-BY-NC license from<span> </span><a href="https://flic.kr/p/4kezSq" id="_i_6" lang="" target="_blank">Edmund Tse</a>.</span></div>
+</div>
+<p id="N10705" lang="">The CPU is the master of the computer. Every subsystem, including the input, output, and storage systems, interacts with and through the processor. For example, the processor receives the user’s input (such as a mouse double-clicking a file on the screen), then interacts with the storage device (such as the hard drive) to retrieve the file. Processing, which is the act of taking data that has been input and converting it to something usable, occurs. Then, the processor creates a visual display of the file by outputting it to the monitor through the output subsystems.</p>
+<p lang=""><span>CPU是計算機的主人。</span><span>每個子系統，包括輸入，輸出和存儲系統，都與處理器交互並通過處理器交互。</span><span>例如，處理器接收用戶的輸入（例如，鼠標雙擊屏幕上的文件），然後與存儲設備（例如，硬盤驅動器）進行交互以檢索文件。</span><span>發生處理，這是獲取已輸入數據並將其轉換為可用數據的行為。</span><span>然後，處理器通過將文件通過輸出子系統輸出到監視器來創建文件的可視顯示。</span></p>
+<p id="N10708" lang="">Some hardware serves as storage. The storage functions are handled in the storage subsystems. This area is focused on the act of saving data for future use and retrieval. Early computers had very limited storage, so each program had to be entered prior to running it each time you wanted to use it. In modern computers, storage space has grown exponentially; even basic computers have hundreds of gigabytes or even terabytes of information storage available. Computers use both short-term and long-term storage in their daily operations. For example, when you are typing up a report for school, it is stored in the short-term memory (RAM) of the computer while you are typing and editing the document. Once you save the document, it is transferred to the hard drive (internal) or a USB flash drive (external) for long-term storage and future access.</p>
+<p lang=""><span>一些硬件充當存儲。</span><span>存儲功能在存儲子系統中處理。</span><span>該領域專注於保存數據以備將來使用和檢索的行為。</span><span>早期計算機的存儲空間非常有限，因此每次您想使用它時，都必須在運行該程序之前先輸入每個程序。</span><span>在現代計算機中，存儲空間成倍增長。</span><span>甚至基本計算機都具有數百GB甚至TB的可用信息存儲。</span><span>計算機在日常操作中同時使用短期和長期存儲。</span><span>例如，當您為學校鍵入報告時，在鍵入和編輯文檔時，報告將存儲在計算機的短期內存（RAM）中。</span><span>保存文檔後，</span></p>
+<p id="N1070B" lang="">Let’s look at the internal components of a PC. Explore the simulation below to identify and locate the key internal components of the system unit within a desktop PC. To identify components, move your mouse pointer over the name of the component or the image. Then click on each component to see a detailed view. In the detailed view, you will be able to rotate most components for a complete examination.</p>
+<p lang=""><span>讓我們看一下PC的內部組件。</span><span>探索以下仿真，以識別並找到台式機內系統單元的關鍵內部組件。</span><span>要識別組件，請將鼠標指針移到組件或圖像的名稱上。</span><span>然後單擊每個組件以查看詳細視圖。</span><span>在詳細視圖中，您將能夠旋轉大多數組件以進行完整檢查。</span></p>
+<div class="activitywrap purpose lab wbactivity">
+<div class="activityhead">
+<div class="purposeType purposelab" title=""><span class="scnReader">lab exercise(實驗練習)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N1070E">
+<h5 lang="">Internal Components of the Desktop System Unit(<span>台式機系統單元的內部組件</span>)</h5>
+<iframe data-mce-fragment="1" frameborder="0" height="409" id="_i_7" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/IFSM_201_Hype-V1.html" width="746"></iframe></div>
+</div>
+</div>
+<div actguid="d87f2cfc0a0001dc08794f8182a9e9f2" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cfc0a0001dc08794f8182a9e9f2&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch01_lbd04">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader"></span></div>
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing(通過實踐學習)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_lbd04">
+<div class="page 482801" id="opch01_lbd04">
+<div class="question" id="482801">
+<div>True or False: RAM is a form of long-term storage.</div>
+<div><span>是非題：RAM是一種長期存儲形式。</span></div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582879_i1_rad_0" name="582879_i1_group" type="radio" value="A"/><label for="582879_i1_rad_0">True</label></span><span class="radioContainer clearfix"><input id="582879_i1_rad_1" name="582879_i1_group" type="radio" value="B"/><label for="582879_i1_rad_1">False</label></span></div>
+</div>
+<a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/x-oli-workbook_page/javascript();" rel="556705" title="Click for hint"></a></div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2cfc0a0001dc08794f8182a9e9f2"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a><span>Reset this Activity</span></div>
+</div>
+</div>
+</div>
+<div actguid="d87f2cfd0a0001dc5f4a916d44669e20" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cfd0a0001dc5f4a916d44669e20&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="d_u2_m2_internal_2_unit">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""><span class="scnReader">learn by doing(通過實踐學習)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="_u2_m2_internal_2_unit">
+<div class="page 482422" id="o_u2_m2_internal_2_unit">
+<div class="question ddfb" id="482422">
+<div>
+<p id="N10066" lang="">For each of the following internal components, drag the component name to the corresponding description.</p>
+<p lang=""><span>對於以下每個內部組件，將組件名稱拖到相應的描述中。</span></p>
+<div class="customActivityHolder" data-showinputs="false" height="505" id="custom-482422" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/_u2_m2_internal_2_unit_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/DragDropWrapper.js" type="javascript" width="550">
+<div>
+<div class="component">
+<table border="0" cellspacing="4">
+<tbody>
+<tr>
+<td><em>Description(描述)</em></td>
+<td><em>Internal Component(內部組件)</em></td>
+</tr>
+<tr>
+<td>This item is used for installation of devices, such as hard drives or CD/DVD drives.(<span>此項用於安裝設備，例如硬盤驅動器或CD / DVD驅動器。</span>)</td>
+<td>
+<div class="target" input_ref="internal_drive_bay_target"></div>
+</td>
+</tr>
+<tr>
+<td>This component enhances the functions of a component of the system unit and/or provides a connection to a peripheral such as a monitor or mouse.(<span>該組件增強了系統單元的組件的功能和/或提供了與外圍設備（例如監視器或鼠標）的連接。</span>)</td>
+<td>
+<div class="target" input_ref="adapter_card(expansion_card)_target"></div>
+</td>
+</tr>
+<tr>
+<td>An adapter card would be installed here.(<span>此處將安裝適配器卡。</span>)</td>
+<td>
+<div class="target" input_ref="adapter_card_slot(s)_or_expansion_card_slot(s)_target"></div>
+</td>
+</tr>
+<tr>
+<td>This is what the PC uses to receive the electrical power it needs to operate.(<span>這就是PC用於接收其操作所需的電能的方式。</span>)</td>
+<td>
+<div class="target" input_ref="power_supply_target"></div>
+</td>
+</tr>
+<tr>
+<td>This component contains a control unit and an arithmetic logic unit.(<span>該組件包含一個控制單元和一個算術邏輯單元。</span>)</td>
+<td>
+<div class="target" input_ref="processor_chip (CPU)_target"></div>
+</td>
+</tr>
+<tr>
+<td>This thin, flat piece of circuit board directly or indirectly connects all other components and peripherals.(<span>這塊薄而扁平的電路板直接或間接連接所有其他組件和外圍設備。</span>)</td>
+<td>
+<div class="target" input_ref="motherboard_(system_board)_target"></div>
+</td>
+</tr>
+<tr>
+<td>This component temporarily stores instructions, data, and results during processing.(<span>該組件在處理期間臨時存儲指令，數據和結果。</span>)</td>
+<td>
+<div class="target" input_ref="memory_module_target"></div>
+</td>
+</tr>
+<tr>
+<td>Primary or additional processors are inserted here.(<span>主或附加處理器插入此處。</span>)</td>
+<td>
+<div class="target" input_ref="processor_slot(s)_target"></div>
+</td>
+</tr>
+<tr>
+<td>This component stores instructions, programs, data, and information for future use.(<span>該組件存儲指令，程序，數據和信息，以備將來使用。</span>)</td>
+<td>
+<div class="target" input_ref="hard_drive_target"></div>
+</td>
+</tr>
+<tr>
+<td>This component controls the speed at which instructions are retrieved and processed by the CPU.(<span>該組件控制CPU檢索和處理指令的速度。</span>)</td>
+<td>
+<div class="target" input_ref="system_clock_target"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="input_source">
+<div class="initiator" input_val="mb_drag">Motherboard (system board)(主板 系統版)</div>
+<span> </span>
+<div class="initiator" input_val="memory_drag">Memory module(記憶體模組)</div>
+<span> </span>
+<div class="initiator" input_val="proc_slot_drag">CPU socket(s)(CPU插槽)</div>
+<span> </span>
+<div class="initiator" input_val="proc_chip_drag">Processor chip (CPU)(處理器芯片)</div>
+<span> </span>
+<div class="initiator" input_val="exp_slot_drag">Adapter card slot(s) or expansion card slot(s)(適配器卡插槽或擴展卡插槽)</div>
+<span> </span>
+<div class="initiator" input_val="adpt_card_drag">Adapter card (expansion card)(轉接卡 擴展卡)</div>
+<span> </span>
+<div class="initiator" input_val="int_bay_drag">Internal drive bay(內部驅動器托架)</div>
+<span> </span>
+<div class="initiator" input_val="hd_drag">Hard drive(硬盤)</div>
+<span> </span>
+<div class="initiator" input_val="ps_drag">Power supply(電源供應)</div>
+<span> </span>
+<div class="initiator" input_val="sys_clock_drag">System clock(系統時鐘))</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2cfd0a0001dc5f4a916d44669e20"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cfd0a0001dc5f4a916d44669e20" id="reset-d87f2cfd0a0001dc5f4a916d44669e20"></a>Reset this Activity</div>
+<div class="pageControls clearfix"></div>
+</div>
+</div>
+</div>
+<div actguid="d87f2cff0a0001dc0198dfbb3f637e3b" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cff0a0001dc0198dfbb3f637e3b&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dcomputer_drag_drop">
+<div class="activityhead">
+<div class="purposeType purposedidigetthis" title=""><span class="scnReader">did I get this(我懂了嗎)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="computer_drag_drop">
+<div class="page 482523" id="ocomputer_drag_drop">
+<div class="question ddfb" id="482523">
+<div>
+<p id="N10066" lang="">The following interactive drag-and-drop game depicts the typical placement of some of the key internal system components for a desktop PC. Some manufacturers may place these components in different locations in relation to the motherboard. Drag the component from the right side to the location identified on the left. Your challenge is to select the correct component for the locations identified on the left.</p>
+<p lang=""><span>下面的交互式拖放遊戲描述了台式PC的一些關鍵內部系統組件的典型放置。</span><span>一些製造商可能會將這些組件放置在相對於主板的不同位置。</span><span>將組件從右側拖動到左側標識的位置。</span><span>您面臨的挑戰是為左側標識的位置選擇正確的組件。</span></p>
+<div class="customActivityHolder" data-showinputs="false" height="326" id="custom-482523" layout="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/computer_drag_drop_layout.xml" source="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/DragDropWrapperCDD.js" type="javascript" width="600">
+<div>
+<div class="component">
+<div id="scientificmethod1">
+<div class="target" input_ref="PowerSupply_target">Power Supply(電源供應)</div>
+<span> </span>
+<div class="target" input_ref="HardDrive_target">Hard Drive(硬盤)</div>
+<span> </span>
+<div class="target" input_ref="Memory_target">Memory(記憶體)</div>
+<span> </span>
+<div class="target" input_ref="Processor_target">Processor(處理器)</div>
+<span> </span>
+<div class="target" input_ref="HeatSink_target">Heat Sink(散熱器)</div>
+<span> </span>
+<div class="target" input_ref="ExpCard_target">Expansion Card(擴展插槽)</div>
+<span> </span>
+<div class="target" input_ref="ExpSlot_target">Expansion Slots(擴充卡)</div>
+</div>
+</div>
+<div class="input_source">
+<div class="initiator" input_val="PowerSupply_drag"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/power_supply.png"/></div>
+<div class="initiator" input_val="HardDrive_drag"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/HardDrive_drg.png"/></div>
+<div class="initiator" input_val="Memory_drag"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/Memory_drg.png"/></div>
+<div class="initiator" input_val="Processor_drag"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/Processor_drg.png"/></div>
+<div class="initiator" input_val="HeatSink_drag"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/Heatsink_drg.png"/></div>
+<div class="initiator" input_val="ExpCard_drag"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/ExpCard_drg.png"/></div>
+<div class="initiator" input_val="ExpSlot_drag"><img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/webcontent/computerdd/ExpSlot_drg.png"/></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2cff0a0001dc0198dfbb3f637e3b"><a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a>Reset this Activity</div>
+</div>
+</div>
+</div>
+<div class="activitywrap purpose checkpoint wbactivity">
+<div class="activityhead">
+<div class="purposeType purposecheckpoint" title=""><span class="scnReader">checkpoint(檢查點)</span></div>
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity wbactivity" id="N1077B">
+<p id="N10780" lang="">Take a minute to stopand reflect on your progress for this learning objective.</p>
+<p lang=""><span>花一點時間停下來，為這個學習目標反思自己的進步。</span></p>
+<div actguid="d87f2d000a0001dc20c4632bfd88777d" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2d000a0001dc20c4632bfd88777d&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap compositeNest flash" id="dpch01_checkpoint02">
+<div class="activityhead">
+<div class="activityinfo"></div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="pch01_checkpoint02">
+<div class="page 483053" id="opch01_checkpoint02">
+<div class="question" id="483053">
+<div>Do you feel comfortable with this material and ready to move on?</div>
+<div><span>您對這種材料感到滿意並準備繼續前進嗎？</span></div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="583205_i1_rad_0" name="583205_i1_group" type="radio" value="A"/><label for="583205_i1_rad_0">Yes, I feel confident in my ability to meet this learning objective.(<label for="583205_i1_rad_0"><span><span>是的，我對實現這一學習目標的能力充滿信心。</span></span></label>)</label></span><span class="radioContainer clearfix"><input id="583205_i1_rad_1" name="583205_i1_group" type="radio" value="B"/><label for="583205_i1_rad_1">No, I'd like some more material on this learning objective.(<label class="correctPrimary" for="583205_i1_rad_1"><span><span>不，我想要有關此學習目標的更多材料。</span></span></label>)<a alt="Click to reset all Hints, Feedback, and answers for this activity." class="btnReset" contextguids="d87f2cff0a0001dc0198dfbb3f637e3b" id="reset-d87f2cff0a0001dc0198dfbb3f637e3b"></a><span>Reset this Activity</span></label></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tinyfooter" role="contentinfo"><a class="oli" href="https://oli.cmu.edu/"></a></div>
+<br />PCH1 Introduction(簡介) << <a href='PCH1 Introduction(簡介).html'>Previous</a> <a href='PCH1 Software(軟體).html'>Next</a> >> PCH1 Software(軟體)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
