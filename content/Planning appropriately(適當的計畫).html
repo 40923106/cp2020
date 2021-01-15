@@ -1,0 +1,337 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923106</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923106</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Hint.html'>Hint</a><ul class='dropdown'><li><a href='gitlab-ci.yml.html'>gitlab-ci.yml</a></li></ul><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li class='has-children'><a href='CMSiMDE 程式架構.html'>CMSiMDE 程式架構</a><ul class='dropdown'><li><a href='為何需要網際內容管理.html'>為何需要網際內容管理</a><li><a href='如何建立 CMSiMDE 子模組.html'>如何建立 CMSiMDE 子模組</a><li><a href='為何需要以子模組的設計.html'>為何需要以子模組的設計</a><li><a href='兩種不同的 git clone.html'>兩種不同的 git clone</a><li><a href='假如 CMSiMDE 不設為子模組.html'>假如 CMSiMDE 不設為子模組</a><li><a href='為何需要有動態網頁與靜態網頁.html'>為何需要有動態網頁與靜態網頁</a><li><a href='CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果.html'>CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果</a></li></li></ul></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='UNIT1  Succeeding in PC Hardware(成功的PC硬體).html'>UNIT1  Succeeding in PC Hardware(成功的PC硬體)</a><ul class='dropdown'><li><a href='Srategies for Learning (學習策略).html'>Srategies for Learning (學習策略)</a><li><a href='Planning appropriately(適當的計畫).html'>Planning appropriately(適當的計畫)</a><li><a href='Devloping Skills for Independent Learnin(發展自主學習的技能).html'>Devloping Skills for Independent Learnin(發展自主學習的技能)</a><li><a href='Metacognitive Skills(後設認知的技能).html'>Metacognitive Skills(後設認知的技能)</a></li></ul><li class='has-children'><a href='UNIT2 Hardware Basics(硬體的基礎).html'>UNIT2 Hardware Basics(硬體的基礎)</a><ul class='dropdown'><li><a href='PCH1 Basics(基礎).html'>PCH1 Basics(基礎)</a><li><a href='PCH1 Introduction(簡介).html'>PCH1 Introduction(簡介)</a><li><a href='PCH1 Hardware(硬體).html'>PCH1 Hardware(硬體)</a><li><a href='PCH1 Software(軟體).html'>PCH1 Software(軟體)</a><li><a href='PCH1 Firmware(韌體).html'>PCH1 Firmware(韌體)</a><li><a href='PCH1 Componentization Standardization(組件化 標準化).html'>PCH1 Componentization Standardization(組件化 標準化)</a></li></li></ul></ul><li><a href='hw2.html'>hw2</a><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='1.Character Input(字符輸入).html'>1.Character Input(字符輸入)</a><li><a href='2.Odd or Even(奇數或偶數).html'>2.Odd or Even(奇數或偶數)</a><li><a href='3.List Less Than Ten(列少於十).html'>3.List Less Than Ten(列少於十)</a><li><a href='4.Divisior(除數).html'>4.Divisior(除數)</a></li></ul><li><a href='心得.html'>心得</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Srategies for Learning (學習策略) << <a href='Srategies for Learning (學習策略).html'>Previous</a> <a href='Devloping Skills for Independent Learnin(發展自主學習的技能).html'>Next</a> >> Devloping Skills for Independent Learnin(發展自主學習的技能)<br /><h1>Planning appropriately(適當的計畫)</h1>
+<div class="header" role="banner">
+<div class="oliClassTitle">Learning Objectives(學習目標)<br/><a href="https://oli.cmu.edu/jcourse/lms/students/syllabus.do?section=d87f1d540a0001dc1f2919b17868b65f" title="PC Hardware (Open + Free)"></a></div>
+</div>
+<div class="opacity">
+<div class="content shadowTwo" role="main">
+<div class="pagtopwrapwrap">
+<div class="pagtopwrap">
+<div aria-label="page" class="pagtop" role="navigation"><a accesskey="Ctrl+Arrow Right" aria-label="next" class="next oneclick degree1" href="https://oli.cmu.edu/jcourse/workbook/activity/page?context=d87f2cdd0a0001dc6344686ccb0bc023" role="navigation" title="Next: Developing Skills for Independent Learning"></a></div>
+</div>
+</div>
+<div class="" id="lobjh">
+<ul>
+<li>
+<div class="" id="recog_approp_study_strat" lang="">Recognize appropriate study strategies in particular situations.learn by doing.</div>
+</li>
+</ul>
+</div>
+<div class="contentContain">
+<div actguid="d87f2cdf0a0001dc66c3aeb817b11eaa" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2cdf0a0001dc66c3aeb817b11eaa&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="d_u01_m01_metacog_LBD_2b_inline">
+<div class="activityhead">
+<div class="activityinfo">
+<ul>
+<li>
+<div class="" id="recog_approp_study_strat" lang=""><span><span>在特定情況下，通過實踐學習，識別適當的學習策略。</span></span></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="_u01_m01_metacog_LBD_2b_inline">
+<div class="page 84907 482775" id="o_u01_m01_metacog_LBD_2b_inline">
+<div>
+<p id="N1005D" lang="">Joe has just started the Memory and BIOS Module. He wants to get through it as quickly as possible and take the Quiz. As he clicks through the unit, he sees a bunch of text with some activities sprinkled throughout, and is trying to decide how to proceed.</p>
+<p lang=""><span>Joe剛剛啟動了內存和BIOS模塊。</span><span>他想盡快通過並參加測驗。</span><span>當他單擊該單元時，他看到一堆文本，上面散佈著一些活動，並試圖決定如何進行。</span></p>
+</div>
+<div class="question" id="482775">
+<div>Which of the following strategies would likely be most effective and efficient for Joe?</div>
+<div class="ans">
+<div class="component"><span class="radioContainer clearfix"><input id="582836_ans_rad_0" name="582836_ans_group" type="radio" value="A"/><label for="582836_ans_rad_0">Joe should jump straight to the learning activities without reading the explanatory text. For each activity, he should select different answer choices to see if they’re right or wrong and read the feedback that appears.</label></span><span class="radioContainer clearfix"><input id="582836_ans_rad_1" name="582836_ans_group" type="radio" value="B"/><label for="582836_ans_rad_1">Joe should read the explanatory text and complete the learning activities.</label></span><span class="radioContainer clearfix"><input id="582836_ans_rad_2" name="582836_ans_group" type="radio" value="C"/><label for="582836_ans_rad_2">Joe should plan to attend class that week rather than trying to figure out the best way to proceed on his own.</label></span><span class="radioContainer clearfix"><input id="582836_ans_rad_3" name="582836_ans_group" type="radio" value="E"/><label for="582836_ans_rad_3">Joe should read the unit straight through from beginning to end, skipping the activities.</label></span></div>
+<div class="component"><span class="radioContainer clearfix"></span></div>
+<div class="component">
+<div><span>以下哪種策略對Joe可能最有效？</span></div>
+<div class="ans">
+<div class="component"><span class="radioContainer clearfix"><input id="582836_ans_rad_0" name="582836_ans_group" type="radio" value="A"/><label for="582836_ans_rad_0"><span><span>喬應該直接參加學習活動，而不必閱讀說明性文字。</span><span>對於每項活動，他都應選擇不同的答案選項以查看它們是對還是錯，並閱讀顯示的反饋。</span></span></label></span><span class="radioContainer clearfix"><input id="582836_ans_rad_1" name="582836_ans_group" type="radio" value="B"/><label for="582836_ans_rad_1"><span><span>Joe應該閱讀解釋性說明並完成學習活動。</span></span></label></span><span class="radioContainer clearfix"><input id="582836_ans_rad_2" name="582836_ans_group" type="radio" value="C"/><label for="582836_ans_rad_2"><span><span>喬應該計劃在那個星期上課，而不是試圖找出自己繼續上課的最佳方式。</span></span></label></span><span class="radioContainer clearfix"><input id="582836_ans_rad_3" name="582836_ans_group" type="radio" value="E"/><label for="582836_ans_rad_3"><span><span>喬應該從頭到尾直接閱讀本單元，跳過活動。</span></span></label></span></div>
+</div>
+</div>
+</div>
+<a alt="Click for hint" class="fa iconHint" href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/_u01_m01_learning_strategies/x-oli-workbook_page/javascript();" rel="556662" title="Click for hint"></a></div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix" id="pagecontrols-d87f2cdf0a0001dc66c3aeb817b11eaa"></div>
+</div>
+</div>
+</div>
+<p id="N10696" lang="">Joe is weighing the options outlined here in order to plan a strategy. Kudos to Joe, as most people neglect planning, opting instead to simply start the task at hand. While it might seem more efficient to spend less time planning in favor of actually doing the work, it can ultimately be inefficient. Consider how much longer it can take to drive somewhere if you don’t take the time to get directions or plan your route around construction detours. You can think of PC Hardware in much the same way — it will take you much longer to complete the course if you don't first figure out what you already know and where to focus your efforts.</p>
+<p lang=""><span>Joe正在權衡此處概述的選項，以計劃策略。</span><span>由於大多數人都忽略了計劃，喬對喬感到很榮幸，而是選擇簡單地開始手頭的任務。</span><span>儘管花費較少的時間計劃以實際完成工作似乎更為有效，但最終可能會效率低下。</span><span>考慮一下，如果您不花時間去指導路線或計劃繞行建築彎道的路線，可能需要花費多長時間。</span><span>您可以以幾乎相同的方式來考慮PC硬件-如果您不首先弄清已經知道的知識和將精力集中在什麼地方，則需要花費更長的時間才能完成課程。</span></p>
+<p id="N10699" lang="">In fact, one of the characteristics that distinguishes experts from novices is that experts spend far more time planning their approach to a task and less time actually completing it. Novices do the reverse — rushing through the planning stage and spending far more time completing the overall task.</p>
+<p id="N10699" lang=""><span>實際上，使專家與新手區分開的特徵之一是，專家花費更多的時間來計劃他們執行任務的方法，而花更少的時間實際完成任務。新手則相反—匆匆完成了計劃階段，花了更多的時間完成總體任務。</span></p>
+<div actguid="d87f2ce00a0001dc4d8407f38803099e" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2ce00a0001dc4d8407f38803099e&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dsrl3_new_lbd_1">
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="srl3_new_lbd_1">
+<div class="page 84902 482595 482596 482597 482598 482599" id="osrl3_new_lbd_1">
+<div>
+<p id="N1005D" lang="">Alex has just started the online work for the Networking Hardware Module. He wants to get through it as quickly as possible. But he also wants to do well on the Quiz. He scans the first page and sees text, examples, and some activities. He is trying to make a plan for learning the material on this page.</p>
+<p id="N1005D" lang=""><span>Alex剛剛開始了網絡硬件模塊的在線工作。他想盡快解決它。但他也想在測驗中表現出色。他掃描了第一頁，並看到了文字，示例和一些活動。他正在嘗試制定計劃以學習此頁面上的材料。</span></p>
+<p id="N10060" lang="">Below are some strategies he considers for learning the material on the first page. Which strategies do you think will help Alex learn PC Hardware and prepare him for the Quiz? Select Yes or No for each option.</p>
+<div>
+<p id="N10060" lang=""><span>以下是他考慮用於學習第一頁材料的一些策略。您認為哪些策略可以幫助Alex學習PC硬件並為測驗做準備？為每個選項選擇是或否。</span></p>
+</div>
+</div>
+<div class="question" id="482595">
+<div>
+<p id="N10065" lang="">Read the text and examples and work through the activities in the order that they appear on the page.</p>
+<p lang=""><span>閱讀文本和示例，並按照活動在頁面上顯示的順序進行操作。</span></p>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582607_i1_rad_0" name="582607_i1_group" type="radio" value="A"/><label class="correctPrimary" for="582607_i1_rad_0">Yes</label></span><span class="radioContainer clearfix"><input id="582607_i1_rad_1" name="582607_i1_group" type="radio" value="B"/><label class="" for="582607_i1_rad_1">No</label></span></div>
+<div class="component"><span class="radioContainer clearfix"></span></div>
+<div class="feedback clearfix correct"><span class="icon"></span>
+<div class="response">Correct. We designed the problems in this course to help you understand the key ideas explained in the examples. So you will learn best if you read this material before attempting the activities. Also the feedback for correct and incorrect answers doesn’t have as much information as the text. So if you only try the problems, you’ll be missing important information.</div>
+<div class="response"></div>
+<div class="response">
+<div class="feedback clearfix correct"><span class="icon"></span>
+<div class="response"><span><span>正確。</span><span>我們設計了本課程中的問題，以幫助您了解示例中解釋的關鍵思想。</span><span>因此，如果您在嘗試活動之前閱讀了此材料，則將學得最好。</span><span>同樣，正確和不正確答案的反饋也沒有文本提供的信息多。</span><span>因此，如果僅嘗試解決問題，則會丟失重要信息。</span></span></div>
+</div>
+</div>
+<div class="response"></div>
+</div>
+</div>
+</div>
+<div class="question" id="482596">
+<div>
+<p id="N10072" lang="">Go straight to the activities without reading the text. Then, for each activity, start picking different answers to see what is right and wrong. Read the feedback that appears.</p>
+<p lang=""><span>直接進入活動而不閱讀文本。</span><span>然後，對於每個活動，開始選擇不同的答案，以查看對與錯。</span><span>閱讀出現的反饋。</span></p>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582608_i1_rad_0" name="582608_i1_group" type="radio" value="A"/><label for="582608_i1_rad_0">Yes</label></span><span class="radioContainer clearfix"><input id="582608_i1_rad_1" name="582608_i1_group" type="radio" value="B"/><label for="582608_i1_rad_1">No</label></span></div>
+</div>
+</div>
+<div class="question" id="482597">
+<div>
+<p id="N1007C" lang="">Read the learning objective at the top of the page. Skip the text and read through the activities quickly to get familiar with what you have to be able to do. Then go back and read the text and examples and work the activities in order.</p>
+<div class="question" id="482597">
+<div>
+<p id="N1007C" lang=""><span><span>閱讀頁面頂部的學習目標。</span><span>跳過文本并快速閱讀活動以熟悉您必須要做的事情。</span><span>然後返回並閱讀本文和示例，並按順序進行活動。</span></span></p>
+</div>
+</div>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582609_i1_rad_0" name="582609_i1_group" type="radio" value="A"/><label for="582609_i1_rad_0">Yes</label></span><span class="radioContainer clearfix"><input id="582609_i1_rad_1" name="582609_i1_group" type="radio" value="B"/><label for="582609_i1_rad_1">No</label></span></div>
+</div>
+</div>
+<div class="question" id="482598">
+<div>
+<p id="N10086" lang="">Since Alex is in a hurry, he should read the examples and skip the activities.</p>
+<p lang=""><span>由於Alex著急，他應該閱讀示例並跳過活動。</span></p>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582610_i1_rad_0" name="582610_i1_group" type="radio" value="A"/><label for="582610_i1_rad_0">Yes</label></span><span class="radioContainer clearfix"><input id="582610_i1_rad_1" name="582610_i1_group" type="radio" value="B"/><label for="582610_i1_rad_1">No</label></span></div>
+</div>
+</div>
+<div class="question" id="482599">
+<div>
+<p id="N10090" lang="">Since Alex is in a hurry, he should pick out a few activities on the page then go back and look for a similar example to guide him.</p>
+<div>
+<p id="N10090" lang=""><span>由於Alex著急，他應該在頁面上挑選一些活動，然後返回並尋找類似的示例來指導他。</span></p>
+</div>
+<div class="i1"></div>
+</div>
+<div class="i1">
+<div class="component"><span class="radioContainer clearfix"><input id="582611_i1_rad_0" name="582611_i1_group" type="radio" value="A"/><label for="582611_i1_rad_0">Yes</label></span><span class="radioContainer clearfix"><input id="582611_i1_rad_1" name="582611_i1_group" type="radio" value="B"/><label for="582611_i1_rad_1">No</label></span></div>
+<div class="component"></div>
+<div class="component">
+<div class="opacity">
+<div class="content shadowTwo" role="main">
+<div class="contentContain">
+<div actguid="d87f2ce00a0001dc4d8407f38803099e" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2ce00a0001dc4d8407f38803099e&amp;userGUID=40923106&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose didigetthis flash" id="dsrl3_new_lbd_1">
+<div class="actContain">
+<div class="activity flash">
+<div class="flash_obj asx testFlash" id="srl3_new_lbd_1">
+<div class="page 84902 482595 482596 482597 482598 482599" id="osrl3_new_lbd_1">
+<div class="question" id="482599">
+<div class="i1"></div>
+<div class="i1">
+<br />Srategies for Learning (學習策略) << <a href='Srategies for Learning (學習策略).html'>Previous</a> <a href='Devloping Skills for Independent Learnin(發展自主學習的技能).html'>Next</a> >> Devloping Skills for Independent Learnin(發展自主學習的技能)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

@@ -133,12 +133,139 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">為何需要有動態網頁與靜態網頁 << <a href='為何需要有動態網頁與靜態網頁.html'>Previous</a> <a href='hw1.html'>Next</a> >> hw1<br /><h1>CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果</h1>
-<p>假如在上列頁面標題中加上兩個 "?", 上面這個標題就無法順利分頁, 但是利用 SciTE 編輯 config/content.htm 之後將兩個 "?" 刪除後則可以正確完成分頁.</p>
-<p>上面的標題字元數超過 80 個, 雖可正常分頁但是在資料展示上就顯得不很方便.</p>
-<p>CMSiMDE 標題不能使用 ":" 的原因在於 Windows 操作系統不允許檔案名稱中有 ":", 因此當 CMSiMDE 動態轉靜態時必須以頁面標題作為該頁的檔案名稱, 而無法完成靜態頁面存檔的問題會讓 CMSiMDE 無法順利將動態資料轉為靜態資料.</p>
-<p></p>
-<br />為何需要有動態網頁與靜態網頁 << <a href='為何需要有動態網頁與靜態網頁.html'>Previous</a> <a href='hw1.html'>Next</a> >> hw1</div>
+    <div id="tipue_search_content">2.Odd or Even(奇數或偶數) << <a href='2.Odd or Even(奇數或偶數).html'>Previous</a> <a href='4.Divisior(除數).html'>Next</a> >> 4.Divisior(除數)<br /><h1>3.List Less Than Ten(列少於十)</h1>
+<div class="pagtopwrap2"><i><i>list numbers elements if conditional(</i></i><i><span>如果有條件，則列出數字元素</span></i><i>)</i><br/><span></span></div>
+<div class="pagtopwrap2">
+<div><i></i></div>
+<div><span style="color: #ff6600;"><i>Exercise3(and Solution)</i></span></div>
+<p>Take a list, say for example this one(<span>拿一個清單，例如說一個</span>):</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">89</span><span class="p">]</span></code></pre>
+</figure>
+<p>and write a program that prints out all the elements of the list that are less than 5.</p>
+<p><span><span>並編寫一個程序，打印出列表中小於5的所有元素。</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"></code></pre>
+</figure>
+<p>Extras(附加功能):</p>
+<ol>
+<li>Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.(<span><span>而不是一個一個地打印元素，而是創建一個新列表，其中該列表中的所有元素少於5個，然後打印出該新列表。</span></span>)</li>
+<li>Write this in one line of Python.(<span><span>用一行Python編寫。</span></span>)</li>
+<li>Ask the user for a number and return a list that contains only elements from the original list<span> </span><code class="highlighter-rouge">a</code><span> </span>that are smaller than that number given by the user.(<span><span>向用戶詢問一個數字，然後返回一個列表，該列表僅包含原始列表</span></span><code class="highlighter-rouge">a</code><span><span>中小於用戶給定數字的</span><span>元素</span><span>。</span></span>)</li>
+</ol>
+<p><span style="color: #ff6600;">Discussion(討論區)</span></p>
+<p>This week’s topics(本週主題):</p>
+<ol>
+<li>Lists(清單)</li>
+<li>More conditionals(更多條件) (if statements(語句))</li>
+</ol>
+<p><span style="color: #ff6600;">Lists(清單)</span></p>
+<p>This week’s exercise hits on a topic critical for all types and styles of programming:<span> </span><strong>lists</strong>. Lists are basically an ordered way of grouping things (called<span> </span><strong>elements</strong>) - the cool thing about lists in Python is that you can have a list that contains objects of multiple types. Your list can mix between strings, integers, objects, other lists, what have you.</p>
+<p><span>本週的練習涉及一個對所有類型和風格的編程都至關重要的主題：</span><strong><span><span>list</span></span></strong><span><span>。</span><span>列表基本上是一種將事物（稱為</span></span><strong><span><span>elements</span></span></strong><span><span>）</span><span>進行分組的有序方式-Python中</span><span>列表的最酷的事情是，您可以擁有一個包含多種類型的對象的列表。</span><span>您的列表可以混合在字符串，整數，對象，其他列表之間，包括您所擁有的。</span></span></p>
+<p>The way to construct an empty list is just to do</p>
+<p><span>構造一個空列表的方法就是</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+</figure>
+<p>And your variable<span> </span><code class="highlighter-rouge">x</code><span> </span>now holds an empty list. To add things to this list, just “append” them to the list. Like so:</p>
+<p><span><span>現在</span><span>，您的變量</span><span>包含一個空列表。</span><span>要將內容添加到此列表中，只需將它們“添加”到列表中即可。</span><span>像這樣:</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code></pre>
+</figure>
+<p>Your list<span> </span><code class="highlighter-rouge">x</code><span> </span>now looks like<span> </span><code class="highlighter-rouge">[3]</code>.</p>
+<p>In Python, lists are also<span> </span><strong>iterables</strong>, which means you can loop through them with a<span> </span><strong>for loop</strong><span> </span>in a convenient way. (If you come from other languages like C++ or Java you are most likely used to using a counter to loop through indices of a list - in Python you can actually loop through the elements.) I will let the code speak for itself:</p>
+<p><span>在Python中，列表也是</span><strong><span><span>可迭代的</span></span></strong><span><span>，這意味著您可以</span><span>方便地</span><span>使用</span></span><strong><span><span>for循環</span></span></strong><span><span>遍歷它們</span><span>。</span></span><span><span>如果您來自其他語言，例如C ++或Java，則最有可能習慣於使用計數器循環遍歷列表的索引-在Python中，您實際上可以循環遍曆元素。）我將讓代碼說明自己:</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span></code></pre>
+</figure>
+<p>Will yield the result(<span>將產生結果</span>):</p>
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon">1 
+3
+"Michele"
+[5, 6, 7]</code></pre>
+</figure>
+<p>There are many other properties of lists, but for the basic exercise all you should need is this for loop property. Future weeks will address other properties of lists.</p>
+<p><span>列表還有許多其他屬性，但是對於基本練習而言，您只需要此for循環屬性。</span><span>未來幾週將處理列表的其他屬性。</span></p>
+<p>For more information about lists in Python, check out these resources:</p>
+<ul>
+<li><a href="http://docs.python.org/3.3/tutorial/datastructures.html">The official Python documentation on lists</a></li>
+<li><a href="http://www.tutorialspoint.com/python/python_lists.htm">Tutorialspoint on Python lists</a></li>
+<li><a href="http://effbot.org/zone/python-list.htm">Someone else’s blog post about lists</a></li>
+</ul>
+<p><span style="color: #ff6600;">More Conditionals(更多條件)</span></p>
+<p>The nice thing about conditionals is that they follow logical operations. They can also be used to test equality. Let’s do a small example. Let’s say I want to make a piece of code that converts from a numerical grade (1-100) to a letter grade (A, B, C, D, F). The code would look like this():</p>
+<p><span>關於條件的好處是它們遵循邏輯運算。</span><span>它們也可以用於測試相等性。</span><span>讓我們做一個小例子。</span><span>假設我要編寫一段代碼，將其從數字等級（1-100）轉換為字母等級（A，B，C，D，F）。</span><span>代碼如下所示：</span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
+</figure>
+<p>What happens if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 50? All the conditions are false, so<span> </span><code class="highlighter-rouge">"F"</code><span> </span>gets printed on the screen. But what if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, executing<span> </span><code class="highlighter-rouge">print("A")</code>. Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
+<p><span>如果</span><code class="highlighter-rouge">grade</code><span>是50，會發生什麼？所有條件均為假，因此</span><code class="highlighter-rouge">"F"</code><span>將其打印在屏幕上。但是，如果</span><code class="highlighter-rouge">grade</code><span>是95，該怎麼辦？然後所有條件都成立，一切都打印出來了，對吧？不！程序將逐行執行。滿足第一個條件（等級&gt; = 90），因此程序將輸入</span><code class="highlighter-rouge">if</code><span>語句內的代碼，執行</span><code class="highlighter-rouge">print("A")</code><span>。一旦執行了條件語句中的代碼，將跳過其餘條件，並且不檢查其他條件。</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pageControls clearfix">
+<br />2.Odd or Even(奇數或偶數) << <a href='2.Odd or Even(奇數或偶數).html'>Previous</a> <a href='4.Divisior(除數).html'>Next</a> >> 4.Divisior(除數)</div>
         
     <!-- footer -->
       <div class="container">
